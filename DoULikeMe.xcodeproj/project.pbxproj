@@ -14,6 +14,10 @@
 		08874F292984E2A40088993B /* DoULikeMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08874F282984E2A40088993B /* DoULikeMeTests.swift */; };
 		08874F332984E2A40088993B /* DoULikeMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08874F322984E2A40088993B /* DoULikeMeUITests.swift */; };
 		08874F352984E2A40088993B /* DoULikeMeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08874F342984E2A40088993B /* DoULikeMeUITestsLaunchTests.swift */; };
+		08874F422984E3480088993B /* Font+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08874F412984E3480088993B /* Font+Extensions.swift */; };
+		08874F482984E3CF0088993B /* Coconat-BoldExt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 08874F452984E3CF0088993B /* Coconat-BoldExt.otf */; };
+		08874F492984E3CF0088993B /* Coconat-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 08874F462984E3CF0088993B /* Coconat-Regular.otf */; };
+		08874F4A2984E3CF0088993B /* MonumentExtended-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 08874F472984E3CF0088993B /* MonumentExtended-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,11 @@
 		08874F2E2984E2A40088993B /* DoULikeMeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoULikeMeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		08874F322984E2A40088993B /* DoULikeMeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoULikeMeUITests.swift; sourceTree = "<group>"; };
 		08874F342984E2A40088993B /* DoULikeMeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoULikeMeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		08874F412984E3480088993B /* Font+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extensions.swift"; sourceTree = "<group>"; };
+		08874F432984E3C10088993B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		08874F452984E3CF0088993B /* Coconat-BoldExt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Coconat-BoldExt.otf"; sourceTree = "<group>"; };
+		08874F462984E3CF0088993B /* Coconat-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Coconat-Regular.otf"; sourceTree = "<group>"; };
+		08874F472984E3CF0088993B /* MonumentExtended-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MonumentExtended-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +103,11 @@
 		08874F162984E2A30088993B /* DoULikeMe */ = {
 			isa = PBXGroup;
 			children = (
+				08874F442984E3CF0088993B /* Fonts */,
+				08874F432984E3C10088993B /* Info.plist */,
 				08874F172984E2A30088993B /* DoULikeMeApp.swift */,
 				08874F192984E2A30088993B /* ContentView.swift */,
+				08874F412984E3480088993B /* Font+Extensions.swift */,
 				08874F1B2984E2A40088993B /* Assets.xcassets */,
 				08874F1D2984E2A40088993B /* Preview Content */,
 			);
@@ -125,6 +137,16 @@
 				08874F342984E2A40088993B /* DoULikeMeUITestsLaunchTests.swift */,
 			);
 			path = DoULikeMeUITests;
+			sourceTree = "<group>";
+		};
+		08874F442984E3CF0088993B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				08874F452984E3CF0088993B /* Coconat-BoldExt.otf */,
+				08874F462984E3CF0088993B /* Coconat-Regular.otf */,
+				08874F472984E3CF0088993B /* MonumentExtended-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,8 +253,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08874F492984E3CF0088993B /* Coconat-Regular.otf in Resources */,
+				08874F4A2984E3CF0088993B /* MonumentExtended-Regular.ttf in Resources */,
 				08874F1F2984E2A40088993B /* Preview Assets.xcassets in Resources */,
 				08874F1C2984E2A40088993B /* Assets.xcassets in Resources */,
+				08874F482984E3CF0088993B /* Coconat-BoldExt.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08874F422984E3480088993B /* Font+Extensions.swift in Sources */,
 				08874F1A2984E2A30088993B /* ContentView.swift in Sources */,
 				08874F182984E2A30088993B /* DoULikeMeApp.swift in Sources */,
 			);
@@ -420,6 +446,7 @@
 				DEVELOPMENT_TEAM = 9SAQ42S589;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DoULikeMe/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,6 +476,7 @@
 				DEVELOPMENT_TEAM = 9SAQ42S589;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DoULikeMe/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
